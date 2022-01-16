@@ -405,7 +405,15 @@ a {
   padding-bottom: 100px;
 }
 
-.post__container {}
+.post__container {
+  font-size: 2rem;
+  line-height: 1.14;
+}
+
+.post__container-title {
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
 
 .post__kit {
   display: grid;
@@ -419,14 +427,14 @@ a {
 
 .post__item-link {
   display: grid;
-  overflow: hidden;
   height: 100%;
   grid-template-rows: 300px 1fr;
+  overflow: hidden;
 }
 
 .post__item-img {
   display: flex;
-  overflow: hidden;
+
   align-content: center;
   justify-content: center;
 }
@@ -456,6 +464,7 @@ a {
 }
 
 .post__item-text {
+  display: block;
   background-color: #eeeeee;
   padding: 20px;
   display: grid;
@@ -464,8 +473,8 @@ a {
 
 .post__item-text h3 {
   font-size: 1.125rem;
-  letter-spacing: 0.09em;
-  line-height: 20px;
+  letter-spacing: 0.05em;
+  line-height: 1.15;
   color: #637588;
   font-weight: 700;
   font-family: "Roboto Slab";
@@ -516,11 +525,14 @@ a {
   text-align: center;
 }
 
+.footer_container {}
+
 .footer_social {
   position: relative;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
+  margin-bottom: 40px;
 }
 
 .footer_social a {
@@ -534,4 +546,28 @@ a {
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+.footer_social::after {
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 37.5px);
+  width: 75px;
+  height: 2px;
+  content: "";
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.footer_copy span:nth-of-type(1) {
+  margin-right: -0.5em;
+  letter-spacing: 0.33em;
+  font-weight: 100;
+  color: #637588;
+  line-height: 1.15;
+}
+
+.footer_copy span:nth-of-type(2) {
+  letter-spacing: 0.05em;
+  color: #e5e5e5;
+  font-weight: 700;
 }
