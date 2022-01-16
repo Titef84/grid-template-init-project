@@ -353,7 +353,7 @@ a {
   font-size: 1.125rem;
   letter-spacing: 0.049em;
   color: #637588;
-  line-height: 20px;
+  line-height: 1.15;
 }
 
 .about__img {
@@ -531,7 +531,6 @@ a {
 
 .footer_social .fab {
   font-size: 2.25rem;
-
   line-height: 20px;
   color: #ffffff;
   text-align: center;
