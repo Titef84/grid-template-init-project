@@ -1,7 +1,7 @@
 @use "../presets" as *;
+@use "../mixins" as *;
 
 .btn {
-  height: 60px;
   border: 2px solid $color-light;
   display: flex;
   justify-content: center;
@@ -13,14 +13,42 @@
   color: $color-light;
   transition: background-color 0.5s;
 
-  &--light {
-    width: 250px;
-    background-color: rgba($color-light, 0.1);
-    border: 2px solid $color-light;
+  @include lg-min {
+    font-size: 1.125rem;
   }
 
+  &--light {
+    @include lg-min {
+      width: 250px;
+      height: 60px;
+    }
+
+    @include lg-md {
+      width: 200px;
+      height: 50px;
+    }
+
+    @include lg {
+      width: 170px;
+      height: 40px;
+    }
+
+    background-color: rgba($color-light, 0.1);
+    border: 2px solid $color-light;
+
+    
+
+  }
+
+
   &--primary {
-    width: 350px;
+    @include sm-min {
+      width: 350px;
+    }
+    @include sm {
+      width: 100%;
+    }
+      height: 60px;
     background-color: rgba($color-primary, 0.8);
     border: 2px solid $color-primary;
   }

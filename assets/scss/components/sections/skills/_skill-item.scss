@@ -1,14 +1,22 @@
 @use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
 
 .skills-item {
   position: relative;
 
+ @media (min-height: 691px) {
+    min-height: calc(33.3333vh - 13.3333px);
+   }
+
+ @media (max-height: 690px) {
+      min-height: calc(230px - 13.3333px);
+   }
+
+
   &__title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include abs-position;
     z-index: 1;
     margin: 0;
   }
@@ -26,29 +34,22 @@
   }
 
   &__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include abs-position;
     background-color: $color-primary;
-    background-image: url(../../assets/img/img-html.png);
+    background-image: url(../../../../img/img-html.png);
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
   }
 
   &__overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include abs-position;
     background-color: $color-primary;
     opacity: 0.8;
     transition: opacity 0.5s;
   }
 }
+
 
 .skills-item:hover .skills-item__link {
   color: $color-accent;
@@ -58,39 +59,8 @@
   opacity: 0.95;
 }
 
-
-.skills-item:nth-of-type(1) {
-  grid-area: a1;
-}
-
-.skills-item:nth-of-type(2) {
-  grid-area: a2;
-}
-
-.skills-item:nth-of-type(3) {
-  grid-area: a3;
-}
-
-.skills-item:nth-of-type(4) {
-  grid-area: a4;
-}
-
-.skills-item:nth-of-type(5) {
-  grid-area: a5;
-}
-
-.skills-item:nth-of-type(6) {
-  grid-area: a6;
-}
-
-.skills-item:nth-of-type(7) {
-  grid-area: a7;
-}
-
-.skills-item:nth-of-type(8) {
-  grid-area: a8;
-}
-
-.skills-item:nth-of-type(9) {
-  grid-area: a9;
+@for $i from 1 to 10 {
+  .skills-item:nth-of-type(#{$i}) {
+    grid-area: a#{$i};
+  }
 }
