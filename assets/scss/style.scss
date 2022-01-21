@@ -8,7 +8,7 @@
 // @use "mixins/extends";
 
 // @use "common/typography";
-//  @use "common/classes";
+// @use "common/classes";
 
 // @use "components/header/header";
 // @use "components/header/header-overlay";
@@ -27,8 +27,9 @@
 @import url(common/_typography.scss);
 @import url(common/_classes.scss);
 @import url(components/header/_header.scss);
-@import url(components/sections/skills/_skills.scss);
-@import url(components/sections/skills/_skill-item.scss);
+// @import url(components/sections/skills/_skills.scss);
+// @import url(components/sections/skills/_skill-item.scss);
+// @import url(components/sections/_section-about.scss);
 
 
 @media (max-height: 691px) {

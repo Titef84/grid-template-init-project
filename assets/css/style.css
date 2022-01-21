@@ -1,8 +1,6 @@
 @import url(common/_typography.scss);
 @import url(common/_classes.scss);
 @import url(components/header/_header.scss);
-@import url(components/sections/skills/_skills.scss);
-@import url(components/sections/skills/_skill-item.scss);
 .about {
   background-color: #e5e5e5;
   padding-top: 100px;
