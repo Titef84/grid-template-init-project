@@ -1,19 +1,21 @@
+@use "../presets" as *;
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: $font-main;
+  font-size: $font-size;
   overflow-y: scroll;
 }
 
 h1 {
   font-size: 3.75rem;
   letter-spacing: 0.08em;
-  color: #ffffff;
+  color: $color-light;
   font-weight: 300;
-  font-family: "Roboto Slab";
+  font-family: $font-header;
   text-align: center;
   line-height: 1.2;
 }
@@ -21,15 +23,13 @@ h1 {
 h2 {
   font-size: 2.5rem;
   letter-spacing: 0.1em;
-  color: #2d3651;
-  font-family: "Roboto Slab";
+  color: $color-primary;
+  font-family: $font-header;
   font-weight: 700;
   line-height: 1.2;
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: $color-light;
 }
-
-

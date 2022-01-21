@@ -1,18 +1,18 @@
+@use "../../../presets" as *;
 
 .skills {
   padding: 10px;
-}
 
-.skills__container {
-  display: grid;
-  grid-template-areas: "a1 a1 a2 a3""a4 a5 a5 a6""a7 a8 a9 a6";
-  gap: 10px;
-}
+  &__container {
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3""a4 a5 a5 a6""a7 a8 a9 a6";
+    gap: $gap * 0.5;
+  }
 
-.skills__actions {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
+  &__actions {
+    margin-top: $gap;
+    margin-bottom: $gap * 1.5;
+    display: flex;
+    justify-content: center;
+  }
 }
-

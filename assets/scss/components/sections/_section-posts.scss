@@ -1,0 +1,118 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.post {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    font-size: 2rem;
+    line-height: 1.14;
+    @extend %container;
+    &-title {
+      margin-bottom: 3rem;
+      margin-top: 0;
+    }
+  }
+
+   &__kit {
+    display: grid;
+    grid-template-areas: "a1 a1 a2 a3""a4 a5 a6 a6";
+    grid-template-columns: repeat(4, 1fr);
+    gap: $gap;
+    padding-bottom: $gap;
+  }
+  
+  &__item-link {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 300px 1fr;
+    overflow: hidden;
+  }
+
+  &__item-img {
+    display: flex;
+  
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__item-text {
+    display: block;
+    background-color: #eeeeee;
+    padding: $gap;
+    display: grid;
+    align-content: center;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.post__item-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.post__item:hover .post__item-img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.post__item:hover .post__item-text {
+  background-color: #d8d8d8;
+  transition: background-color 0.5s;
+}
+
+.post__item:hover .post__item-text h3 {
+  color: $color-primary;
+}
+
+.post__item:hover .post__item-text p {
+  color: $color-primary;
+  transition: color 0.5s;
+}
+
+.post__item-text h3 {
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  color: $color-gray;
+  font-weight: 700;
+  font-family: $font-header;
+  text-align: center;
+}
+
+.post__item-text p {
+  font-size: 1rem;
+  line-height: $gap;
+  color: $color-gray;
+  text-align: center;
+}
+
+.post__item:nth-of-type(1) {
+  grid-area: a1;
+}
+
+.post__item:nth-of-type(2) {
+  grid-area: a2;
+}
+
+.post__item:nth-of-type(3) {
+  grid-area: a3;
+}
+
+.post__item:nth-of-type(4) {
+  grid-area: a4;
+}
+
+.post__item:nth-of-type(5) {
+  grid-area: a5;
+}
+
+.post__item:nth-of-type(6) {
+  grid-area: a6;
+}
+  

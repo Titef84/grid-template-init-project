@@ -1,7 +1,8 @@
+@use "../presets" as *;
 
 .btn {
   height: 60px;
-  border: 2px solid #ffffff;
+  border: 2px solid $color-light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,23 +10,30 @@
   padding-right: 1em;
   font-size: 1.125rem;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: $color-light;
   transition: background-color 0.5s;
+
+  &--light {
+    width: 250px;
+    background-color: rgba($color-light, 0.1);
+    border: 2px solid $color-light;
+  }
+
+  &--primary {
+    width: 350px;
+    background-color: rgba($color-primary, 0.8);
+    border: 2px solid $color-primary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 
-.btn--light {
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #ffffff;
-}
 
-.btn--primary {
-  width: 350px;
-  background-color: rgba(45, 54, 81, 0.8);
-  border: 2px solid #2d3651;
-}
 
-.btn:hover, .btn:focus {
-  background-color: #d66926;
-}
+
+
+
 

@@ -1,6 +1,60 @@
-.about__container {
-  max-width: 1340px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.about {
+  background-color: $color-gray-light;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 271px;
+    gap: 100px;
+    @extend %container;
+  }
+
+  &__content {
+    display: block;
+  }
+
+  &__content-title {
+    margin: 0 0 48px 0;
+  }
+
+  &__content-text {
+    font-size: 1.125rem;
+    letter-spacing: 0.049em;
+    color: $color-gray;
+    line-height: 1.15;
+  }
+
+  &__img {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__img-img {
+    max-width: 100%;
+    max-height: 480px;
+  }
+}
+
+.about__content p:first-of-type {
+  position: relative;
+  margin-top: -5px;
+}
+
+.about__content p:first-of-type::after {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 2px;
+  height: 200px;
+  content: "";
+  background-color: rgba($color-gray, 0.1);
+}
+
+.about__content p:last-of-type {
+  margin: 0;
 }

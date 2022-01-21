@@ -13,8 +13,10 @@
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
+    "node-sass": "^7.0.1",
     "postcss": "^8.3.9",
     "sass": "^1.43.2",
+    "sass-loader": "^12.4.0",
     "sort-css-media-queries": "^2.0.4"
   }
 }

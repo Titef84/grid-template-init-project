@@ -1,0 +1,32 @@
+@use "../../presets" as *;
+
+.header-navbar {
+  &__list {
+    list-style: none;
+    margin: -10px;
+    padding: 0;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(auto-fit, minmax(2em, max-content));
+    gap: $gap;
+  }
+
+  &__btn {
+    display: none;
+  }
+
+  &__link {
+    font-size: 1.125rem;
+    letter-spacing: 0.089em;
+    padding: $gap $gap * 0.5;
+    display: block;
+    transition: color 0.5s;
+
+    &:hover,
+    &:focus {
+    color: $color-accent;
+  }
+  }
+
+  
+}
