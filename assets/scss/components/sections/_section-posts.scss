@@ -15,14 +15,14 @@
     }
   }
 
-   &__kit {
+  &__kit {
     display: grid;
-    grid-template-areas: "a1 a1 a2 a3""a4 a5 a6 a6";
+    grid-template-areas: "a1 a1 a2 a3" "a4 a5 a6 a6";
     grid-template-columns: repeat(4, 1fr);
     gap: $gap;
     padding-bottom: $gap;
   }
-  
+
   &__item-link {
     display: grid;
     height: 100%;
@@ -32,7 +32,7 @@
 
   &__item-img {
     display: flex;
-  
+
     align-content: center;
     justify-content: center;
   }
@@ -115,4 +115,3 @@
 .post__item:nth-of-type(6) {
   grid-area: a6;
 }
-  

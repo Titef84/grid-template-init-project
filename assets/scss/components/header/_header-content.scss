@@ -16,7 +16,7 @@
     @include lg-md {
       margin: 0 0 43px 0;
     }
-    
+
     @include md {
       margin: 0 0 33px 0;
     }
@@ -32,8 +32,6 @@
       align-items: center;
     }
   }
-
-  
 
   &__container {
     @extend %container;

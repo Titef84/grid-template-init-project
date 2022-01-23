@@ -1,19 +1,16 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
-
 .skills-item {
   position: relative;
 
- @media (min-height: 691px) {
+  @media (min-height: 691px) {
     min-height: calc(33.3333vh - 13.3333px);
-   }
+  }
 
- @media (max-height: 690px) {
-      min-height: calc(230px - 13.3333px);
-   }
-
+  @media (max-height: 690px) {
+    min-height: calc(230px - 13.3333px);
+  }
 
   &__title {
     @include abs-position;
@@ -31,6 +28,14 @@
     font-size: 1.25rem;
     letter-spacing: 0.1em;
     transition: color 0.5s;
+
+    @include md-min {
+      font-size: 1.25rem;
+    }
+
+    @include md {
+      font-size: 1.125rem;
+    }
   }
 
   &__image {
@@ -49,7 +54,6 @@
     transition: opacity 0.5s;
   }
 }
-
 
 .skills-item:hover .skills-item__link {
   color: $color-accent;

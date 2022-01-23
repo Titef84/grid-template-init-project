@@ -1,11 +1,7 @@
 @use "../../libs/normalize.css/normalize";
 
 @use "presets" as *;
-
-
-// @use "mixins/mixins";
-// @use "mixins/mixins-media";
-// @use "mixins/extends";
+@use "mixins" as *;
 
 @use "common/typography";
 @use "common/classes";
@@ -23,12 +19,3 @@
 @use "components/sections/section-posts";
 
 @use "components/footer/footer";
-
-
-
-
-
-
-
-
-
