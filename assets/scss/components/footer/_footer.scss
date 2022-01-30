@@ -3,7 +3,7 @@
 
 .footer {
   background-color: $color-primary;
-  padding: 50px 20px 70px;
+  padding: 50px 20px 69px;
   text-align: center;
 
   &_container {
@@ -27,14 +27,14 @@
 
 .footer_social .fab {
   font-size: 2.25rem;
-  line-height: $gap;
+  // line-height: $gap;
   color: $color-light;
   text-align: center;
 }
 
 .footer_social::after {
   position: absolute;
-  bottom: -$gap;
+  bottom: -19px;
   left: calc(50% - 37.5px);
   width: 75px;
   height: 2px;
@@ -47,11 +47,15 @@
   letter-spacing: 0.33em;
   font-weight: 100;
   color: $color-gray;
-  line-height: 1.15;
+  line-height: 1.17;
 }
 
 .footer_copy span:nth-of-type(2) {
   letter-spacing: 0.05em;
   color: $color-gray-light;
   font-weight: 700;
+}
+
+.footer_copy {
+  line-height: 1.18;
 }

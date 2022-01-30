@@ -6,10 +6,27 @@
   background-color: $color-primary;
 
   &__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: $gap;
     @extend %container;
+    @include lg-min {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include lg-md {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md-sm {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include sm {
+      display: grid;
+      grid-template-columns: repeat(1fr);
+    }
   }
 
   &-item__input {
@@ -26,11 +43,29 @@
     border-bottom-color: rgb($color-light, 0.25);
   }
 
+  &-item:nth-of-type(1) {
+    @include md-sm {
+      grid-column: 1 / span 2;
+    }
+  }
+
   &-item__btn {
     color: color-light;
-    width: 100%;
+
     border-color: rgba($color-light, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.1);
+
+    @include lg-min {
+      width: 100%;
+    }
+
+    @include lg-md {
+      width: 100%;
+    }
+
+    @include md-sm {
+      width: 100%;
+    }
   }
 }
