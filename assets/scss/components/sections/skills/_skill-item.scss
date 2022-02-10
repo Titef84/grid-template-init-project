@@ -3,6 +3,7 @@
 
 .skills-item {
   position: relative;
+  overflow: hidden;
 
   @media (min-height: 691px) {
     min-height: calc(33.3333vh - 13.3333px);
@@ -61,6 +62,12 @@
 
 .skills-item:hover .skills-item__overlay {
   opacity: 0.95;
+}
+
+.skills-item:hover .skills-item__image {
+  // -webkit-transform: scale(1.1);
+  // -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @for $i from 1 to 10 {

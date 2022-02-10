@@ -37,10 +37,17 @@
     padding-right: 30px;
     font-size: 1.125rem;
     letter-spacing: 0.15em;
-    color: color-light;
+    color: $color-light;
     background-color: rgb($color-light, 0.05);
     border: 2px solid rgba($color-light, 0);
     border-bottom-color: rgb($color-light, 0.25);
+
+    &:hover,
+    &:focus {
+      border-color: rgb($color-light, 0.15);
+      background-color: rgb($color-light, 0.15);
+      border-bottom-color: $color-light;
+    }
   }
 
   &-item:nth-of-type(1) {
@@ -50,11 +57,16 @@
   }
 
   &-item__btn {
-    color: color-light;
+    color: $color-light;
 
     border-color: rgba($color-light, 0);
     border-bottom-color: rgba($color-light, 0.25);
     background-color: rgba($color-light, 0.1);
+
+    &:hover,
+    &:focus {
+      border-color: $color-light;
+    }
 
     @include lg-min {
       width: 100%;

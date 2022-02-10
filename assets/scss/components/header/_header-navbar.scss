@@ -124,11 +124,13 @@
         top: 14.5px;
       }
     }
-
-    &.item {
-      @include md {
-        margin: $gap $gap-sm;
-      }
+  }
+  &__item {
+    @include md {
+      margin: $gap $gap-sm;
+    }
+    @include sm {
+      margin: $gap $gap-sm;
     }
   }
 
@@ -139,7 +141,7 @@
     transition: color 0.5s;
 
     @include md-min {
-      padding: $gap $gap-sm;
+      padding: $gap $gap;
     }
 
     @include md {
