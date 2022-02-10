@@ -17,7 +17,7 @@
       justify-content: end;
       grid-template-columns: repeat(auto-fit, minmax(2em, max-content));
       gap: $gap;
-      @include unlist(0 -10px 0);
+      @include unlist(0 -10px 0 0);
     }
 
     @include md {
@@ -141,7 +141,7 @@
     transition: color 0.5s;
 
     @include md-min {
-      padding: $gap $gap;
+      padding: $gap $gap-sm;
     }
 
     @include md {
