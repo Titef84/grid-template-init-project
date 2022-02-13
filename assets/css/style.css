@@ -543,11 +543,11 @@ a {
           transform: rotate(-45deg);
 }
 .header-navbar__btn.active span:nth-child(1) {
-  left: 2.5px;
+  left: 2px;
   top: 3.5px;
 }
 .header-navbar__btn.active span:nth-child(2) {
-  left: calc(50% - 5px);
+  left: calc(50% - 2px);
   top: 3.5px;
 }
 .header-navbar__btn.active span:nth-child(3) {
@@ -559,11 +559,11 @@ a {
   opacity: 0;
 }
 .header-navbar__btn.active span:nth-child(5) {
-  left: 2.5px;
+  left: 2px;
   top: 14.5px;
 }
 .header-navbar__btn.active span:nth-child(6) {
-  left: calc(50% - 2.5px);
+  left: calc(50% - 2px);
   top: 14.5px;
 }
 .header-navbar__link {

@@ -95,12 +95,12 @@
       }
 
       &:nth-child(1) {
-        left: 2.5px;
+        left: 2px;
         top: 3.5px;
       }
 
       &:nth-child(2) {
-        left: calc(50% - 5px);
+        left: calc(50% - 2px);
         top: 3.5px;
       }
 
@@ -115,12 +115,12 @@
       }
 
       &:nth-child(5) {
-        left: 2.5px;
+        left: 2px;
         top: 14.5px;
       }
 
       &:nth-child(6) {
-        left: calc(50% - 2.5px);
+        left: calc(50% - 2px);
         top: 14.5px;
       }
     }
