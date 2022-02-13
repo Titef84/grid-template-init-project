@@ -39,14 +39,19 @@
     letter-spacing: 0.15em;
     color: $color-light;
     background-color: rgb($color-light, 0.05);
-    border: 2px solid rgba($color-light, 0);
+    // border: 2px solid rgba($color-light, 0);
     border-bottom-color: rgb($color-light, 0.25);
+    transition: background-color 0.5s ease 0s;
+    transition: border-color 0.5s ease 0s;
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-color: rgb($color-light, 0.15);
       background-color: rgb($color-light, 0.15);
       border-bottom-color: $color-light;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 

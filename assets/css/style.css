@@ -783,13 +783,21 @@ a {
   letter-spacing: 0.15em;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
+  -webkit-transition: background-color 0.5s ease 0s;
+  -o-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
+  -webkit-transition: border-color 0.5s ease 0s;
+  -o-transition: border-color 0.5s ease 0s;
+  transition: border-color 0.5s ease 0s;
 }
-.form-item__input:hover, .form-item__input:focus {
+.form-item__input:hover {
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
+}
+.form-item__input:focus {
+  outline: none;
 }
 .form-item__btn {
   color: #ffffff;
@@ -832,6 +840,12 @@ a {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 .post__action {
   display: -webkit-box;
@@ -846,24 +860,21 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .post__item:hover .post__item-img img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .post__item:hover .post__item-text {
   background-color: #d8d8d8;
-  -webkit-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
 }
 
 .post__item:hover .post__item-text h3 {
