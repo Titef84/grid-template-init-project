@@ -798,6 +798,9 @@ a {
 }
 .form-item__input:focus {
   outline: none;
+  border-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom-color: #ffffff;
 }
 .form-item__btn {
   color: #ffffff;
