@@ -43,13 +43,19 @@
     border-bottom-color: rgb($color-light, 0.25);
     transition: background-color 0.5s ease 0s;
     transition: border-color 0.5s ease 0s;
+    &::placeholder {
+      color: #637588;
+    }
 
     &:hover {
       border-color: rgb($color-light, 0.15);
       background-color: rgb($color-light, 0.15);
-      border-bottom-color: $color-light;
+      border-bottom-color: $color-gray-light;
     }
-
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: #97a5b3;
+    }
     &:focus {
       outline: none;
       border-color: rgb($color-light, 0.15);
