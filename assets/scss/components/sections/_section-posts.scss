@@ -93,8 +93,7 @@
     padding: $gap;
     display: grid;
     align-content: center;
-    transition: background-color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
+    transition: 0.5s;
   }
 
   &__action {
@@ -123,7 +122,6 @@
 
 .post__item:hover .post__item-text p {
   color: $color-primary;
-  transition: color 0.5s;
 }
 
 .post__item-text h3 {

@@ -874,12 +874,9 @@ a {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  transition: background-color 0.5s ease-in-out;
-  -webkit-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 .post__action {
   display: -webkit-box;
@@ -917,9 +914,6 @@ a {
 
 .post__item:hover .post__item-text p {
   color: #2d3651;
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
 }
 
 .post__item-text h3 {
